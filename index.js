@@ -1,17 +1,18 @@
 /**
- * Created by gejiawen on 2015/3/17.
+ * @author gejiawen
+ * @date 2015/3/17
  */
 
 
 
-/*
+/**
  * Expose variable
  * */
 
 module.exports = bullhead;
 
 
-/*
+/**
  * Add thousand-bit separators to a number value.
  *
  * `precision` and `unit` is optional,
@@ -26,7 +27,7 @@ module.exports = bullhead;
  * @param {Number|String} value
  * @param {String} [precision] - confirm the precision of decimal, maybe have a round operation.
  * @param {String} [unit] - add a extra identifier, maybe about economy, '$' or '￥' etc.
- * @returns {String} formatted
+ * @returns {String} formatted-string
  *
  * @api public
  * */
