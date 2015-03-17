@@ -1,6 +1,6 @@
 {
   "name": "bullhead",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "a package to add thousand-bit separator for a number value.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/gejiawen/ts.git"
+    "url": "git://github.com/gejiawen/bullhead.git"
   },
   "keywords": [
     "thousand-bit",
@@ -17,7 +17,7 @@
   "author": "gejiawen <806717031@qq.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gejiawen/ts/issues"
+    "url": "https://github.com/gejiawen/bullhead/issues"
   },
-  "homepage": "https://github.com/gejiawen/ts"
+  "homepage": "https://github.com/gejiawen/bullhead"
 }
