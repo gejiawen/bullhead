@@ -8,7 +8,7 @@
  * Expose variable
  * */
 
-module.exports = ts;
+module.exports = bullhead;
 
 
 /*
@@ -31,7 +31,7 @@ module.exports = ts;
  * @api public
  * */
 
-function ts(value, precision, unit) {
+function bullhead(value, precision, unit) {
     if (/[^0-9\.]/.test(value) || !value) {
         return "Invalid value, need a number.";
     }

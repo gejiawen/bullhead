@@ -1,5 +1,5 @@
 {
-  "name": "ts",
+  "name": "bullhead",
   "version": "0.0.2",
   "description": "a package to add thousand-bit separator for a number value.",
   "main": "index.js",
