@@ -1,0 +1,23 @@
+{
+  "name": "ts",
+  "version": "0.0.2",
+  "description": "a package to add thousand-bit separator for a number value.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gejiawen/ts.git"
+  },
+  "keywords": [
+    "thousand-bit",
+    "separator"
+  ],
+  "author": "gejiawen <806717031@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gejiawen/ts/issues"
+  },
+  "homepage": "https://github.com/gejiawen/ts"
+}
