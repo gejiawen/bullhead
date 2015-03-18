@@ -1,6 +1,6 @@
 {
   "name": "bullhead",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "a package to add thousand-bit separator for a number value.",
   "main": "index.js",
   "scripts": {
@@ -23,5 +23,8 @@
   "devDependencies": {
     "jsdoc": "^3.3.0-beta2",
     "should": "^5.2.0"
+  },
+  "dependencies": {
+    "commander": "^2.7.1"
   }
 }

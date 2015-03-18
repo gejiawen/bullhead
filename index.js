@@ -37,8 +37,7 @@ function bullhead(value, precision, unit) {
         return "Invalid value, need a number.";
     }
 
-    if ((precision !== undefined && typeof precision !== 'number')
-        || (precision !== undefined && typeof precision === 'number' && parseInt(precision) !== precision)) {
+    if (!/^\d+$/.test(precision.toString())) {
         return "Invalid precision, need a integer number.";
     }
 

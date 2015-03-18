@@ -1,0 +1,39 @@
+#!/usr/bin/env node
+
+var pkg = require('../package.json');
+var program = require('commander');
+var bh = require('../');
+
+program
+    .version(pkg.version);
+
+program
+    .command('init [folder]')
+    .description('Initialize a folder for bullhead.')
+    .option('-c, --clear [true]', 'clear a exist folder when init.')
+    .action(function(folder, options) {
+        var clearMode = options.clear || false;
+        folder = folder || './';
+        console.log('Initialize folder %s and %s clear exist folder.', folder,  clearMode ? '' : 'NOT');
+    });
+
+program
+    .command('run [value]')
+    .description('add thousand-bit separator for the value.')
+    .option('-p, --precision [precision]', 'confirm the precision of decimal')
+    .option('-f, --flag [flag]', 'add a extra identifier')
+    .action(function (value, options) {
+        console.log(bh(value, options.precision, options.flag));
+    });
+
+program.on('--help', function() {
+    console.log("  Use 'bh <command> --help' to get more information");
+    console.log('');
+});
+
+program.parse(process.argv);
+
+if (program.args.length < 1) {
+    program.help();
+}
+
