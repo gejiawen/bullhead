@@ -33,11 +33,11 @@ module.exports = bullhead;
  * */
 
 function bullhead(value, precision, unit) {
-    if (/[^0-9\.]/.test(value) || !value) {
+    if (!value || /[^0-9\.]/.test(value)) {
         return "Invalid value, need a number.";
     }
 
-    if (!/^\d+$/.test(precision.toString())) {
+    if (precision && !/^\d+$/.test(precision.toString())) {
         return "Invalid precision, need a integer number.";
     }
 
